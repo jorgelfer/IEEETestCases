@@ -1,0 +1,62 @@
+
+CIRCUIT ELEMENT POWER FLOW
+
+(Power Flow into element from indicated Bus)
+
+Power Delivery Elements
+
+  Bus     Phase     kW     +j   kvar         kVA         PF
+
+ELEMENT = "Vsource.SOURCE"
+SOURCEBUS     1        -9.3 +j     -3.2        9.8       0.9460
+SOURCEBUS     2        -6.1 +j     -3.1        6.8       0.8926
+SOURCEBUS     3        -6.1 +j     -3.0        6.8       0.8967
+   TERMINAL TOTAL .   -21.5 +j     -9.3       23.4       0.9181
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL .     0.0 +j      0.0        0.0       1.0000
+
+ELEMENT = "Line.OHLINE"
+SOURCEBUS     1         9.3 +j      3.2        9.8       0.9460
+SOURCEBUS     2         6.1 +j      3.1        6.8       0.8926
+SOURCEBUS     3         6.1 +j      3.0        6.8       0.8967
+   TERMINAL TOTAL .    21.5 +j      9.3       23.4       0.9181
+PRIMARY       1        -9.1 +j     -3.1        9.7       0.9473
+PRIMARY       2        -6.0 +j     -3.0        6.8       0.8935
+PRIMARY       3        -6.1 +j     -3.0        6.8       0.8957
+   TERMINAL TOTAL .   -21.3 +j     -9.1       23.1       0.9186
+
+ELEMENT = "Line.QUAD"
+PRIMARY       1         9.1 +j      3.1        9.7       0.9473
+PRIMARY       2         6.0 +j      3.0        6.8       0.8935
+PRIMARY       3         6.1 +j      3.0        6.8       0.8957
+   TERMINAL TOTAL .    21.3 +j      9.1       23.1       0.9186
+LOADBUS       1        -9.0 +j     -3.0        9.5       0.9487
+LOADBUS       2        -6.0 +j     -3.0        6.7       0.8944
+LOADBUS       3        -6.0 +j     -3.0        6.7       0.8944
+   TERMINAL TOTAL .   -21.0 +j     -9.0       22.8       0.9191
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus     Phase     kW   +j  kvar         kVA         PF
+
+ELEMENT = "Load.L1"
+LOADBUS       1       9.0 +j    3.0        9.5       0.9487
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     9.0 +j      3.0        9.5       0.9487
+
+ELEMENT = "Load.L2"
+LOADBUS       2       6.0 +j    3.0        6.7       0.8944
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     6.0 +j      3.0        6.7       0.8944
+
+ELEMENT = "Load.L3"
+LOADBUS       3       6.0 +j    3.0        6.7       0.8944
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     6.0 +j      3.0        6.7       0.8944
+
+
+Total Circuit Losses =    0.5 +j    0.3

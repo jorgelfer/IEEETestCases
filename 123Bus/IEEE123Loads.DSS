@@ -98,3 +98,4 @@ New Load.S111a Bus1=111.1  Phases=1 Conn=Wye   Model=1 kV=2.4   kW=20.0  kvar=10
 New Load.S112a Bus1=112.1  Phases=1 Conn=Wye   Model=5 kV=2.4   kW=20.0  kvar=10.0  
 New Load.S113a Bus1=113.1  Phases=1 Conn=Wye   Model=2 kV=2.4   kW=40.0  kvar=20.0  
 New Load.S114a Bus1=114.1  Phases=1 Conn=Wye   Model=1 kV=2.4   kW=20.0  kvar=10.0  
+New Load.S610  Bus1=610    Phases=3 Conn=Wye   Model=5 kV=0.277 kW=90.0 kvar=15.0  

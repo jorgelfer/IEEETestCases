@@ -1,0 +1,27 @@
+Clear
+
+
+// Circuit
+
+New Circuit.Cir basekV=115 bus1=A
+
+// Transformer
+
+!New Transformer.SubXfmr phases=3 windings=2 xhl=5 ppm_antifloat=0 %noloadloss=0 %imag=0 sub=yes
+!~ wdg=1 bus=A kV=115 kva=50 conn=delta %R=2.5
+!~ wdg=2 bus=B kV=4.16 kva=50 conn=wye %R=2.5
+
+! this is the second time I got the same as in Python
+!New Transformer.SubXfmr phases=3 windings=2 XHL=6.411990015595762 Sub=yes %noloadloss=0 %imag=0 ppm_antifloat=0
+!~ wdg=1 conn=delta kV=46.0 kva=7500.0 %R=0.16029975038989405 bus=A 
+!~ wdg=2 conn=wye kV=12.47 kva=7500.0 %R=0.16029975038989405 bus=B
+
+! this is the first time I got the same as in Python
+!New Transformer.SubXfmr phases=1 windings=2 XHL=6.411990015595762 Sub=yes %noloadloss=0 %imag=0 ppm_antifloat=0
+!~ wdg=1 kV=46.0 kva=7500.0 %R=0.16029975038989405 bus=A
+!~ wdg=2 kV=12.47 kva=7500.0 %R=0.16029975038989405 bus=B
+
+New Transformer.SubXfmr phases=3 windings=2 %Noloadloss=0.0 wdg=1 conn=delta kV=46.0 kva=7500.0 %R=0.16029975038989405 bus=A wdg=2 conn=wye kV=12.47 kva=7500.0 %R=0.16029975038989405 bus=B XHL=6.411990015595762 Sub=yes
+
+Solve
+dump transformer.SubXfmr debug

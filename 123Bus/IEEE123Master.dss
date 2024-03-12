@@ -17,7 +17,7 @@ Set DefaultBaseFrequency=60
 ! The ~ is just shorthad for "more" for the New or Edit commands
 
 New object=circuit.ieee123
-~ basekv=4.16 Bus1=150 pu=1.00 R1=0 X1=0.0001 R0=0 X0=0.0001
+~ basekv=4.16 Bus1=150 pu=1.02 R1=0 X1=0.0001 R0=0 X0=0.0001
 
 ! 3-PHASE GANGED REGULATOR AT HEAD OF FEEDER (KERSTING ASSUMES NO IMPEDANCE IN THE REGULATOR)
 ! the first line defines the 3-phase transformer to be controlled by the regulator control.
@@ -220,3 +220,33 @@ Redirect IEEE123Loads.DSS
 
 Set VoltageBases = [4.16, 0.48]    ! ARRAY OF VOLTAGES IN KV
 CalcVoltageBases  ! PERFORMS ZERO LOAD POWER FLOW TO ESTIMATE VOLTAGE BASES
+
+
+
+
+! fix transformer tap at 1.0
+Transformer.reg1a.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg1a.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg2a.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg2a.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg3a.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg3a.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg4a.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg4a.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg3c.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg3c.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg4b.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg4b.maxtapchange=0  !Fixed at present tap
+
+Transformer.reg4c.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+RegControl.creg4c.maxtapchange=0  !Fixed at present tap
+
+Set ControlMode=OFF
+
+// solve
+Buscoords BusCoords.dat   ! load in bus coordinates

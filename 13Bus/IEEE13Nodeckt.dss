@@ -175,3 +175,17 @@ Set Controlmode=OFF
 
 Solve
 */
+
+Transformer.Reg1.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap 0
+Transformer.Reg2.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap 0
+Transformer.Reg3.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap 0
+
+RegControl.Reg1.maxtapchange=0  !Fixed at present tap
+RegControl.Reg2.maxtapchange=0  !Fixed at present tap
+RegControl.Reg3.maxtapchange=0  !Fixed at present tap
+
+
+Set ControlMode=OFF
+
+// Solve
+// Dump Capacitor.Cap1 debug

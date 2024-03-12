@@ -1,4 +1,5 @@
 Clear
+ClearAll
 
 New Circuit.SecondaryTestCircuit pu=1.0 bus1=bussource basekV=46.0 R1=1.036 X1=10.1433 R0=5.462 X0=34.1897
 
@@ -17,3 +18,13 @@ CalcVoltagebases
 Buscoords buscoords.dss
 
 New "EnergyMeter.feeder" element=line.MDV_SUB_1_HSB terminal=1 
+
+// Transformer.SubXfmr.Taps=[1.0, 1.03125]
+Transformer.SubXfmr.wdg=2 Tap=(0.00625  0  * 1 +)   ! Tap -0
+
+RegControl.LTC_SubXfmr_A.maxtapchange=0  !Fixed at present tap
+
+Set ControlMode=OFF
+// solve
+// set mode=snap controlmode=static maxcontroliter=50 maxiterations=25 miniterations=1
+// solve
