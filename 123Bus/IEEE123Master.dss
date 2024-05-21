@@ -17,7 +17,7 @@ Set DefaultBaseFrequency=60
 ! The ~ is just shorthad for "more" for the New or Edit commands
 
 New object=circuit.ieee123
-~ basekv=4.16 Bus1=150 pu=1.01 R1=0 X1=0.0001 R0=0 X0=0.0001
+~ basekv=4.16 Bus1=150 pu=1.02 R1=0 X1=0.0001 R0=0 X0=0.0001
 
 ! 3-PHASE GANGED REGULATOR AT HEAD OF FEEDER (KERSTING ASSUMES NO IMPEDANCE IN THE REGULATOR)
 ! the first line defines the 3-phase transformer to be controlled by the regulator control.
@@ -171,18 +171,18 @@ New Line.L117   Phases=3 Bus1=160r.1.2.3 Bus2=67.1.2.3   LineCode=6    Length=0.
 ! NORMALLY CLOSED SWITCHES ARE DEFINED AS SHORT LINES
 ! Could also be defned by setting the Switch=Yes property
 
-New Line.Sw1    phases=3  Bus1=150r   Bus2=149    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw2    phases=3  Bus1=13     Bus2=152    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw3    phases=3  Bus1=18     Bus2=135    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw4    phases=3  Bus1=60     Bus2=160    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw5    phases=3  Bus1=97     Bus2=197    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw6    phases=3  Bus1=61     Bus2=61s    r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw1    phases=3  Bus1=150r   Bus2=149  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw2    phases=3  Bus1=13     Bus2=152  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw3    phases=3  Bus1=18     Bus2=135  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw4    phases=3  Bus1=60     Bus2=160  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw5    phases=3  Bus1=97     Bus2=197  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw6    phases=3  Bus1=61     Bus2=61s  Switch=y  r1=1e-3 r0=1e-3 x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
 
 ! NORMALLY OPEN SWITCHES; DEFINED AS SHORT LINE TO OPEN BUS SO WE CAN SEE OPEN POINT VOLTAGES. 
 ! COULD ALSO BE DEFINED AS DISABLED OR THE TERMINCAL COULD BE OPENED AFTER BEING DEFINED
 
-New Line.Sw7    phases=3  Bus1=151    Bus2=300_OPEN   r1=1e-3 r0=1e-3  x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
-New Line.Sw8    phases=1  Bus1=54.1   Bus2=94_OPEN.1  r1=1e-3 r0=1e-3  x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw7    phases=3  Bus1=151    Bus2=300_OPEN  Switch=y r1=1e-3 r0=1e-3  x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
+New Line.Sw8    phases=1  Bus1=54.1   Bus2=94_OPEN.1 Switch=y r1=1e-3 r0=1e-3  x1=0.000 x0=0.000 c1=0.000 c0=0.000 Length=0.001
 
 ! LOAD TRANSFORMER AT 61s/610
 ! This is a 150 kVA Delta-Delta stepdown from 4160V to 480V.
@@ -248,5 +248,5 @@ RegControl.creg4c.maxtapchange=0  !Fixed at present tap
 
 Set ControlMode=OFF
 
-// solve
+solve
 Buscoords BusCoords.dat   ! load in bus coordinates
