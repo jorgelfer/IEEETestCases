@@ -1,0 +1,60 @@
+
+New Load.l2
+! ENABLED
+! NPhases = 1
+! Nconds = 2
+! Nterms = 1
+! Yorder = 2
+! NodeRef = "5 0 "
+! Terminal Status: [C C ]
+! Terminal Bus Ref: [2 2 ]
+
+! YPrim (G matrix)
+!         0.1125 |       -0.1125 |
+!        -0.1125 |  0.1125001125 |
+! YPrim (B Matrix) = 
+!       -0.05625 |       0.05625 |
+!        0.05625 | -0.05625005625 |
+! VARIABLES
+~ phases=1
+~ bus1=loadbus.2.0
+~ kV=0.23094010767585
+~ kW=     6.0
+~ pf=0.894
+~ model=1
+~ yearly=
+~ daily=
+~ duty=
+~ growth=
+~ conn=wye
+~ kvar=     3.0
+~ Rneut=-1
+~ Xneut=0
+~ status=variable
+~ class=1
+~ Vminpu=0.95
+~ Vmaxpu=1.05
+~ Vminnorm=0.0
+~ Vminemerg=0.0
+~ xfkVA=0.0
+~ allocationfactor=0.500
+~ kVA=     6.7
+~ %mean=50
+~ %stddev=10
+~ CVRwatts=1
+~ CVRvars=2
+~ kwh=0
+~ kwhdays=30
+~ Cfactor=4
+~ CVRcurve=
+~ NumCust=1
+~ ZIPV="
+~ %SeriesRL=    50.0
+~ RelWeight=1
+~ Vlowpu=0.5
+~ puXharm=0
+~ XRharm=6
+~ spectrum=defaultload
+~ basefreq=50
+~ enabled=true
+~ like=

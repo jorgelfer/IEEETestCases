@@ -1,0 +1,45 @@
+
+CIRCUIT ELEMENT CURRENTS
+
+(Currents into element from indicated bus)
+
+Power Delivery Elements
+
+  Bus     Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+ELEMENT = "Vsource.SOURCE"
+SOURCEBUS     1           41.863 /_  161.3 =    -39.663 +j    13.391
+SOURCEBUS     2           29.357 /_   33.3 =     24.528 +j    16.131
+SOURCEBUS     3           29.426 /_  -86.4 =     1.8282 +j   -29.369
+------------
+SOURCEBUS     0           41.863 /_  -18.7 =     39.663 +j   -13.391
+SOURCEBUS     0           29.357 /_ -146.7 =    -24.528 +j   -16.131
+SOURCEBUS     0           29.426 /_   93.6 =    -1.8282 +j    29.369
+
+ELEMENT = "Line.OHLINE"
+SOURCEBUS     1           41.863 /_  -18.7 =     39.663 +j   -13.391
+SOURCEBUS     2           29.357 /_ -146.7 =    -24.528 +j   -16.131
+SOURCEBUS     3           29.426 /_   93.6 =    -1.8282 +j    29.369
+------------
+LOADBUS       1           41.864 /_  161.3 =    -39.663 +j    13.394
+LOADBUS       2           29.359 /_   33.3 =     24.531 +j    16.129
+LOADBUS       3           29.427 /_  -86.4 =      1.825 +j   -29.371
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus     Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+ELEMENT = "Load.L1"
+LOADBUS       1           41.864 /_  -18.7 =     39.663 +j   -13.394
+LOADBUS       0           41.864 /_  161.3 =    -39.663 +j    13.394
+
+ELEMENT = "Load.L2"
+LOADBUS       2           29.359 /_ -146.7 =    -24.531 +j   -16.129
+LOADBUS       0           29.359 /_   33.3 =     24.531 +j    16.129
+
+ELEMENT = "Load.L3"
+LOADBUS       3           29.427 /_   93.6 =     -1.825 +j    29.371
+LOADBUS       0           29.427 /_  -86.4 =      1.825 +j   -29.371
+

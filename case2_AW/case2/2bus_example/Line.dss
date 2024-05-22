@@ -1,0 +1,1 @@
+New "Line.ohline" bus1=sourcebus.1.2.3 bus2=loadbus.1.2.3 linecode=556mcm Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=2

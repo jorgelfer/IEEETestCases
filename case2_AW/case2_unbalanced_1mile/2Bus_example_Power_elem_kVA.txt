@@ -1,0 +1,52 @@
+
+CIRCUIT ELEMENT POWER FLOW
+
+(Power Flow into element from indicated Bus)
+
+Power Delivery Elements
+
+  Bus     Phase     kW     +j   kvar         kVA         PF
+
+ELEMENT = "Vsource.SOURCE"
+SOURCEBUS     1        -9.1 +j     -3.1        9.6       0.9475
+SOURCEBUS     2        -6.0 +j     -3.0        6.8       0.8936
+SOURCEBUS     3        -6.1 +j     -3.0        6.8       0.8954
+   TERMINAL TOTAL .   -21.2 +j     -9.1       23.1       0.9187
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+SOURCEBUS     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL .     0.0 +j      0.0        0.0       1.0000
+
+ELEMENT = "Line.OHLINE"
+SOURCEBUS     1         9.1 +j      3.1        9.6       0.9475
+SOURCEBUS     2         6.0 +j      3.0        6.8       0.8936
+SOURCEBUS     3         6.1 +j      3.0        6.8       0.8954
+   TERMINAL TOTAL .    21.2 +j      9.1       23.1       0.9187
+LOADBUS       1        -9.0 +j     -3.0        9.5       0.9487
+LOADBUS       2        -6.0 +j     -3.0        6.7       0.8944
+LOADBUS       3        -6.0 +j     -3.0        6.7       0.8944
+   TERMINAL TOTAL .   -21.0 +j     -9.0       22.8       0.9191
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus     Phase     kW   +j  kvar         kVA         PF
+
+ELEMENT = "Load.L1"
+LOADBUS       1       9.0 +j    3.0        9.5       0.9487
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     9.0 +j      3.0        9.5       0.9487
+
+ELEMENT = "Load.L2"
+LOADBUS       2       6.0 +j    3.0        6.7       0.8944
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     6.0 +j      3.0        6.7       0.8944
+
+ELEMENT = "Load.L3"
+LOADBUS       3       6.0 +j    3.0        6.7       0.8944
+LOADBUS       0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL  .     6.0 +j      3.0        6.7       0.8944
+
+
+Total Circuit Losses =    0.2 +j    0.1
