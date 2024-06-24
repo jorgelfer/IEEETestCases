@@ -18,7 +18,7 @@ new circuit.IEEE13Nodeckt
 ! The published test case starts at 1.0 per unit at Bus 650. To make this happen, we will change the impedance
 ! on the transformer to something tiny by dividing by 1000 using the DSS in-line RPN math
 New Transformer.Sub Phases=3 Windings=2   XHL=(8 1000 /)
-~ wdg=1 bus=SourceBus   conn=delta  kv=115  kva=5000   %r=(.5 1000 /) 
+~ wdg=1 bus=SourceBus   conn=Wye  kv=115  kva=5000   %r=(.5 1000 /) 
 ~ wdg=2 bus=650             conn=wye    kv=4.16  kva=5000   %r=(.5 1000 /)  
 
 ! FEEDER 1-PHASE VOLTAGE REGULATORS
@@ -122,27 +122,25 @@ New linecode.mtx607 nphases=1 BaseFreq=60
 // New Load.670a Bus1=670.1    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=17    kvar=10 
 // New Load.670b Bus1=670.2    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=66    kvar=38 
 // New Load.670c Bus1=670.3    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=117  kvar=68 
-New Load.671a Bus1=671.1  Phases=1 Conn=Wye Model=1 kV=2.4   kW=385 kvar=220 ! used to be 3 phase
-New Load.671b Bus1=671.2  Phases=1 Conn=Wye Model=1 kV=2.4   kW= 385 kvar=220 ! used to be 3 phase
-New Load.671c Bus1=671.3  Phases=1 Conn=Wye Model=1 kV=2.4   kW=385 kvar=220 ! used to be 3 phase
-New Load.634a Bus1=634.1     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=160   kvar=110 
-New Load.634b Bus1=634.2     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=120   kvar=90 
-New Load.634c Bus1=634.3     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=120   kvar=90 
-New Load.645 Bus1=645.2       Phases=1 Conn=Wye  Model=1 kV=2.4      kW=170   kvar=125 
+New Load.671 Bus1=671.1.2.3  Phases=3 Conn=Wye Model=1 kV=4.16   kW=1155 kvar=660 vminpu=0.75
+New Load.634a Bus1=634.1     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=160   kvar=110 vminpu=0.75
+New Load.634b Bus1=634.2     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=120   kvar=90 vminpu=0.75
+New Load.634c Bus1=634.3     Phases=1 Conn=Wye  Model=1 kV=0.277  kW=120   kvar=90 vminpu=0.75
+New Load.645 Bus1=645.2       Phases=1 Conn=Wye  Model=1 kV=2.4      kW=170   kvar=125 vminpu=0.75
 ! New Load.646 Bus1=646.2.3    Phases=1 Conn=Wye Model=2 kV=2.402    kW=230   kvar=132 
-New Load.646b Bus1=646.2    Phases=1 Conn=Wye Model=1 kV=2.4    kW=115   kvar=66 ! used to be phase to phase and model 2
-New Load.646c Bus1=646.3    Phases=1 Conn=Wye Model=1 kV=2.4    kW=115   kvar=66 ! used to be phase to phase and model 2
+New Load.646b Bus1=646.2    Phases=1 Conn=Wye Model=1 kV=2.4    kW=115   kvar=66 vminpu=0.75! used to be phase to phase and model 2
+New Load.646c Bus1=646.3    Phases=1 Conn=Wye Model=1 kV=2.4    kW=115   kvar=66 vminpu=0.75! used to be phase to phase and model 2
 ! New Load.692 Bus1=692.3.1    Phases=1 Conn=Wye Model=5 kV=2.402    kW=170   kvar=151 
-New Load.692a Bus1=692.1    Phases=1 Conn=Wye Model=1 kV=2.4    kW=85   kvar=75 ! used to be phase to phase and model 5
-New Load.692c Bus1=692.3    Phases=1 Conn=Wye Model=1 kV=2.4    kW=85   kvar=75 ! used to be phase to phase  and model 5
-New Load.675a Bus1=675.1    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=485   kvar=190 
-New Load.675b Bus1=675.2    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=68   kvar=60 
-New Load.675c Bus1=675.3    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=290   kvar=212 
-New Load.611 Bus1=611.3      Phases=1 Conn=Wye  Model=1 kV=2.4  kW=170   kvar=80 ! used to be model 5
-New Load.652 Bus1=652.1      Phases=1 Conn=Wye  Model=1 kV=2.4  kW=128   kvar=86  ! used to be model 2
-New Load.670a Bus1=670.1    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=17    kvar=10 
-New Load.670b Bus1=670.2    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=66    kvar=38 
-New Load.670c Bus1=670.3    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=117  kvar=68 
+New Load.692a Bus1=692.1    Phases=1 Conn=Wye Model=1 kV=2.4    kW=85   kvar=75 vminpu=0.75! used to be phase to phase and model 5
+New Load.692c Bus1=692.3    Phases=1 Conn=Wye Model=1 kV=2.4    kW=85   kvar=75 vminpu=0.75! used to be phase to phase  and model 5
+New Load.675a Bus1=675.1    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=485   kvar=190 vminpu=0.75
+New Load.675b Bus1=675.2    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=68   kvar=60 vminpu=0.75
+New Load.675c Bus1=675.3    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=290   kvar=212 vminpu=0.75
+New Load.611 Bus1=611.3      Phases=1 Conn=Wye  Model=1 kV=2.4  kW=170   kvar=80 vminpu=0.75! used to be model 5
+New Load.652 Bus1=652.1      Phases=1 Conn=Wye  Model=1 kV=2.4  kW=128   kvar=86  vminpu=0.75! used to be model 2
+New Load.670a Bus1=670.1    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=17    kvar=10 vminpu=0.75
+New Load.670b Bus1=670.2    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=66    kvar=38 vminpu=0.75
+New Load.670c Bus1=670.3    Phases=1 Conn=Wye  Model=1 kV=2.4  kW=117  kvar=68 vminpu=0.75
 
 !CAPACITOR DEFINITIONS
 New Capacitor.Cap1 Bus1=675 phases=3 kVAR=600 kV=4.16 
