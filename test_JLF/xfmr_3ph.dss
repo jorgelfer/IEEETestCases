@@ -1,0 +1,18 @@
+Clear 
+Set DefaultBaseFrequency=60
+
+New circuit.Cir 
+~ basekV=4.16 pu=1.02 phases=3 bus1=A
+~ MVAsc3=20000 MVASC1=21000
+
+New Transformer.TrABC phases=3 windings=2 xhl=6 %loadloss=1
+~ wdg=1 bus=A kV=4.16 kva=3000 conn=delta
+~ wdg=2 bus=B kV=12.47 kva=3000 conn=wye
+
+// set voltageBases=[12.47 4.16]
+calcvoltageBases
+
+Solve
+
+Dump Transformer.TrABC debug
+Show Voltages LN Nodes
