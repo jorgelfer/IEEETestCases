@@ -139,28 +139,32 @@ for ness_3_file in ness_files:
 x = [val / 10.0 for val in range(5, 11, 1)] 
 
 fig, axs = plt.subplots(2, 2)
-axs[0, 0].plot(x, np.array(err_123_l2), 'tab:blue')
-axs[0, 0].plot(x, np.array(err_13_l2), 'tab:orange')
-axs[0, 0].plot(x, np.array(err_3_l2), 'tab:green')
+axs[0, 0].plot(x, np.array(err_123_l2), 'tab:blue', marker='d')
+axs[0, 0].plot(x, np.array(err_13_l2), 'tab:orange', marker='*')
+axs[0, 0].plot(x, np.array(err_3_l2), 'tab:green', marker='o')
 axs[0, 0].set_title('L2 norm')
-axs[0, 1].plot(x, np.array(err_123_l1), 'tab:blue')
-axs[0, 1].plot(x, np.array(err_13_l1), 'tab:orange')
-axs[0, 1].plot(x, np.array(err_3_l1), 'tab:green')
+axs[0, 1].plot(x, np.array(err_123_l1), 'tab:blue', marker='d')
+axs[0, 1].plot(x, np.array(err_13_l1), 'tab:orange', marker='*')
+axs[0, 1].plot(x, np.array(err_3_l1), 'tab:green', marker='o')
 axs[0, 1].set_title('L1 norm')
-axs[1, 0].plot(x, np.array(err_123_linf), 'tab:blue')
-axs[1, 0].plot(x, np.array(err_13_linf), 'tab:orange')
-axs[1, 0].plot(x, np.array(err_3_linf), 'tab:green')
+axs[1, 0].plot(x, np.array(err_123_linf), 'tab:blue', marker='d')
+axs[1, 0].plot(x, np.array(err_13_linf), 'tab:orange', marker='*')
+axs[1, 0].plot(x, np.array(err_3_linf), 'tab:green', marker='o')
 axs[1, 0].set_title('Linf norm')
-axs[1, 1].plot(x, np.array(err_123_fro), 'tab:blue')
-axs[1, 1].plot(x, np.array(err_13_fro), 'tab:orange')
-axs[1, 1].plot(x, np.array(err_3_fro), 'tab:green')
+axs[1, 1].plot(x, np.array(err_123_fro), 'tab:blue', marker='d')
+axs[1, 1].plot(x, np.array(err_13_fro), 'tab:orange', marker='*')
+axs[1, 1].plot(x, np.array(err_3_fro), 'tab:green', marker='o')
 axs[1, 1].set_title('Frobenius norm')
 
-for ax in axs.flat:
-    ax.set(xlabel='ANSI', ylabel='Total Error[kW]')
-
 # Hide x labels and tick labels for top plots and y ticks for right plots.
-# for ax in axs.flat:
-#     ax.label_outer()
+for ax in axs.flat:
+    ax.yaxis.grid(color='gray', linestyle='dashed')
 
+plt.setp(axs[0,0].get_xticklabels(), visible=False)
+plt.setp(axs[0,1].get_xticklabels(), visible=False)
+axs[1,0].set(xlabel='ANSI') 
+axs[1,1].set(xlabel='ANSI') 
+axs[0,0].set(ylabel='Total Error[kW]') 
+axs[1,0].set(ylabel='Total Error[kW]') 
+fig.tight_layout()
 plt.show()
