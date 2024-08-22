@@ -1,5 +1,5 @@
 {
-  "uid": "3a52b9709f6e4da497367e62f9ea8063",
+  "uid": "c7ab7ac33b284a79a0eca3cd74f438d3",
   "time": [
     "2019-01-01T00:00",
     "2019-01-01T01:00",
@@ -16351,7 +16351,12 @@
       "uid": "Transformer.reg1a",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -16696,7 +16701,12 @@
       "uid": "Line.l115",
       "transformer": false,
       "length": 0.4,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -17063,7 +17073,10 @@
       "uid": "Line.l1",
       "transformer": false,
       "length": 0.175,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "1",
@@ -17196,7 +17209,10 @@
       "uid": "Line.l2",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "1",
@@ -17329,7 +17345,12 @@
       "uid": "Line.l3",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -17696,7 +17717,10 @@
       "uid": "Line.l4",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "3",
@@ -17829,7 +17853,10 @@
       "uid": "Line.l5",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "3",
@@ -17962,7 +17989,10 @@
       "uid": "Line.l6",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "5",
@@ -18095,7 +18125,12 @@
       "uid": "Line.l7",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -18462,7 +18497,10 @@
       "uid": "Line.l8",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "8",
@@ -18595,7 +18633,10 @@
       "uid": "Line.l9",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "8",
@@ -18728,7 +18769,12 @@
       "uid": "Line.l10",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -19095,7 +19141,10 @@
       "uid": "Line.l11",
       "transformer": false,
       "length": 0.425,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "9r",
@@ -19228,7 +19277,10 @@
       "uid": "Line.l12",
       "transformer": false,
       "length": 0.15,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "13",
@@ -19361,7 +19413,12 @@
       "uid": "Line.l13",
       "transformer": false,
       "length": 0.825,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -19728,7 +19785,10 @@
       "uid": "Line.l14",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "14",
@@ -19861,7 +19921,10 @@
       "uid": "Line.l15",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "14",
@@ -19994,7 +20057,10 @@
       "uid": "Line.l16",
       "transformer": false,
       "length": 0.375,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "15",
@@ -20127,7 +20193,10 @@
       "uid": "Line.l17",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "15",
@@ -20260,7 +20329,10 @@
       "uid": "Line.l18",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "18",
@@ -20393,7 +20465,12 @@
       "uid": "Line.l19",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -20760,7 +20837,10 @@
       "uid": "Line.l20",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "19",
@@ -20893,7 +20973,10 @@
       "uid": "Line.l21",
       "transformer": false,
       "length": 0.525,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "21",
@@ -21026,7 +21109,12 @@
       "uid": "Line.l22",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -21393,7 +21481,10 @@
       "uid": "Line.l23",
       "transformer": false,
       "length": 0.55,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "23",
@@ -21526,7 +21617,12 @@
       "uid": "Line.l24",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -21893,7 +21989,11 @@
       "uid": "Line.l25",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        1,
+        3
+      ],
+      "t_connections": [
         1,
         3
       ],
@@ -22140,7 +22240,12 @@
       "uid": "Line.l26",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -22507,7 +22612,11 @@
       "uid": "Line.l27",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        3
+      ],
+      "t_connections": [
         1,
         3
       ],
@@ -22754,7 +22863,10 @@
       "uid": "Line.l28",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "26",
@@ -22887,7 +22999,10 @@
       "uid": "Line.l29",
       "transformer": false,
       "length": 0.5,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "27",
@@ -23020,7 +23135,12 @@
       "uid": "Line.l30",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -23387,7 +23507,12 @@
       "uid": "Line.l31",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -23754,7 +23879,12 @@
       "uid": "Line.l32",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -24121,7 +24251,10 @@
       "uid": "Line.l33",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "31",
@@ -24254,7 +24387,10 @@
       "uid": "Line.l34",
       "transformer": false,
       "length": 0.1,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "34",
@@ -24387,7 +24523,11 @@
       "uid": "Line.l35",
       "transformer": false,
       "length": 0.65,
-      "phases": [
+      "f_connections": [
+        1,
+        2
+      ],
+      "t_connections": [
         1,
         2
       ],
@@ -24634,7 +24774,12 @@
       "uid": "Line.l36",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -25001,7 +25146,10 @@
       "uid": "Line.l37",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "36",
@@ -25134,7 +25282,10 @@
       "uid": "Line.l38",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "36",
@@ -25267,7 +25418,10 @@
       "uid": "Line.l39",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "38",
@@ -25400,7 +25554,10 @@
       "uid": "Line.l40",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "40",
@@ -25533,7 +25690,12 @@
       "uid": "Line.l41",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -25900,7 +26062,10 @@
       "uid": "Line.l42",
       "transformer": false,
       "length": 0.5,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "42",
@@ -26033,7 +26198,12 @@
       "uid": "Line.l43",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -26400,7 +26570,10 @@
       "uid": "Line.l44",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "44",
@@ -26533,7 +26706,12 @@
       "uid": "Line.l45",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -26900,7 +27078,10 @@
       "uid": "Line.l46",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "45",
@@ -27033,7 +27214,12 @@
       "uid": "Line.l47",
       "transformer": false,
       "length": 0.15,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -27400,7 +27586,12 @@
       "uid": "Line.l48",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -27767,7 +27958,12 @@
       "uid": "Line.l49",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -28134,7 +28330,12 @@
       "uid": "Line.l50",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -28501,7 +28702,12 @@
       "uid": "Line.l51",
       "transformer": false,
       "length": 0.5,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -28868,7 +29074,12 @@
       "uid": "Line.l52",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -29235,7 +29446,12 @@
       "uid": "Line.l53",
       "transformer": false,
       "length": 0.125,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -29602,7 +29818,12 @@
       "uid": "Line.l54",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -29969,7 +30190,12 @@
       "uid": "Line.l55",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -30336,7 +30562,12 @@
       "uid": "Line.l56",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -30703,7 +30934,10 @@
       "uid": "Line.l57",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "57",
@@ -30836,7 +31070,12 @@
       "uid": "Line.l58",
       "transformer": false,
       "length": 0.75,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -31203,7 +31442,10 @@
       "uid": "Line.l59",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "58",
@@ -31336,7 +31578,12 @@
       "uid": "Line.l60",
       "transformer": false,
       "length": 0.55,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -31703,7 +31950,12 @@
       "uid": "Line.l61",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -32070,7 +32322,12 @@
       "uid": "Line.l62",
       "transformer": false,
       "length": 0.175,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -32437,7 +32694,12 @@
       "uid": "Line.l63",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -32804,7 +33066,12 @@
       "uid": "Line.l64",
       "transformer": false,
       "length": 0.425,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -33171,7 +33438,12 @@
       "uid": "Line.l65",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -33538,7 +33810,10 @@
       "uid": "Line.l66",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "67",
@@ -33671,7 +33946,12 @@
       "uid": "Line.l67",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -34038,7 +34318,12 @@
       "uid": "Line.l68",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -34405,7 +34690,10 @@
       "uid": "Line.l69",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "68",
@@ -34538,7 +34826,10 @@
       "uid": "Line.l70",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "69",
@@ -34671,7 +34962,10 @@
       "uid": "Line.l71",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "70",
@@ -34804,7 +35098,10 @@
       "uid": "Line.l72",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "72",
@@ -34937,7 +35234,12 @@
       "uid": "Line.l73",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -35304,7 +35606,10 @@
       "uid": "Line.l74",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "73",
@@ -35437,7 +35742,10 @@
       "uid": "Line.l75",
       "transformer": false,
       "length": 0.4,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "74",
@@ -35570,7 +35878,12 @@
       "uid": "Line.l76",
       "transformer": false,
       "length": 0.4,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -35937,7 +36250,12 @@
       "uid": "Line.l77",
       "transformer": false,
       "length": 0.7,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -36304,7 +36622,12 @@
       "uid": "Line.l78",
       "transformer": false,
       "length": 0.1,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -36671,7 +36994,12 @@
       "uid": "Line.l79",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -37038,7 +37366,12 @@
       "uid": "Line.l80",
       "transformer": false,
       "length": 0.475,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -37405,7 +37738,12 @@
       "uid": "Line.l81",
       "transformer": false,
       "length": 0.175,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -37772,7 +38110,12 @@
       "uid": "Line.l82",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -38139,7 +38482,10 @@
       "uid": "Line.l83",
       "transformer": false,
       "length": 0.675,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "81",
@@ -38272,7 +38618,12 @@
       "uid": "Line.l84",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -38639,7 +38990,10 @@
       "uid": "Line.l85",
       "transformer": false,
       "length": 0.475,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "84",
@@ -38772,7 +39126,12 @@
       "uid": "Line.l86",
       "transformer": false,
       "length": 0.45,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -39139,7 +39498,10 @@
       "uid": "Line.l87",
       "transformer": false,
       "length": 0.175,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "87",
@@ -39272,7 +39634,12 @@
       "uid": "Line.l88",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -39639,7 +40006,10 @@
       "uid": "Line.l89",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "89",
@@ -39772,7 +40142,12 @@
       "uid": "Line.l90",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -40139,7 +40514,10 @@
       "uid": "Line.l91",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "91",
@@ -40272,7 +40650,12 @@
       "uid": "Line.l92",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -40639,7 +41022,10 @@
       "uid": "Line.l93",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "93",
@@ -40772,7 +41158,12 @@
       "uid": "Line.l94",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -41139,7 +41530,10 @@
       "uid": "Line.l95",
       "transformer": false,
       "length": 0.2,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "95",
@@ -41272,7 +41666,12 @@
       "uid": "Line.l96",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -41639,7 +42038,12 @@
       "uid": "Line.l97",
       "transformer": false,
       "length": 0.55,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -42006,7 +42410,12 @@
       "uid": "Line.l98",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -42373,7 +42782,12 @@
       "uid": "Line.l99",
       "transformer": false,
       "length": 0.8,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -42740,7 +43154,12 @@
       "uid": "Line.l118",
       "transformer": false,
       "length": 0.25,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -43107,7 +43526,10 @@
       "uid": "Line.l100",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "101",
@@ -43240,7 +43662,12 @@
       "uid": "Line.l101",
       "transformer": false,
       "length": 0.275,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -43607,7 +44034,10 @@
       "uid": "Line.l102",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "102",
@@ -43740,7 +44170,10 @@
       "uid": "Line.l103",
       "transformer": false,
       "length": 0.7,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "103",
@@ -43873,7 +44306,10 @@
       "uid": "Line.l104",
       "transformer": false,
       "length": 0.225,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "105",
@@ -44006,7 +44442,12 @@
       "uid": "Line.l105",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -44373,7 +44814,10 @@
       "uid": "Line.l106",
       "transformer": false,
       "length": 0.575,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "106",
@@ -44506,7 +44950,10 @@
       "uid": "Line.l107",
       "transformer": false,
       "length": 0.45,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "108",
@@ -44639,7 +45086,12 @@
       "uid": "Line.l108",
       "transformer": false,
       "length": 1.0,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -45006,7 +45458,10 @@
       "uid": "Line.l109",
       "transformer": false,
       "length": 0.3,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "109",
@@ -45139,7 +45594,10 @@
       "uid": "Line.l110",
       "transformer": false,
       "length": 0.575,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "110",
@@ -45272,7 +45730,10 @@
       "uid": "Line.l111",
       "transformer": false,
       "length": 0.125,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "110",
@@ -45405,7 +45866,10 @@
       "uid": "Line.l112",
       "transformer": false,
       "length": 0.525,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "112",
@@ -45538,7 +46002,10 @@
       "uid": "Line.l113",
       "transformer": false,
       "length": 0.325,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "113",
@@ -45671,7 +46138,12 @@
       "uid": "Line.l114",
       "transformer": false,
       "length": 0.375,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -46038,7 +46510,12 @@
       "uid": "Line.l116",
       "transformer": false,
       "length": 0.4,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -46405,7 +46882,12 @@
       "uid": "Line.l117",
       "transformer": false,
       "length": 0.35,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -46772,7 +47254,12 @@
       "uid": "Line.sw1",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -47139,7 +47626,12 @@
       "uid": "Line.sw2",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -47506,7 +47998,12 @@
       "uid": "Line.sw3",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -47873,7 +48370,12 @@
       "uid": "Line.sw4",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -48240,7 +48742,12 @@
       "uid": "Line.sw5",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -48607,7 +49114,12 @@
       "uid": "Line.sw6",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -48974,7 +49486,12 @@
       "uid": "Line.sw7",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -49341,7 +49858,10 @@
       "uid": "Line.sw8",
       "transformer": false,
       "length": 0.001,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "54",
@@ -49474,7 +49994,12 @@
       "uid": "Transformer.xfm1",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        1,
+        2,
+        3
+      ],
+      "t_connections": [
         1,
         2,
         3
@@ -49819,7 +50344,10 @@
       "uid": "Transformer.reg2a",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "9",
@@ -49954,7 +50482,10 @@
       "uid": "Transformer.reg3a",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "25",
@@ -50089,7 +50620,10 @@
       "uid": "Transformer.reg4a",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        1
+      ],
+      "t_connections": [
         1
       ],
       "source": "160",
@@ -50224,7 +50758,10 @@
       "uid": "Transformer.reg3c",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "25",
@@ -50359,7 +50896,10 @@
       "uid": "Transformer.reg4b",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        2
+      ],
+      "t_connections": [
         2
       ],
       "source": "160",
@@ -50494,7 +51034,10 @@
       "uid": "Transformer.reg4c",
       "transformer": true,
       "length": 10,
-      "phases": [
+      "f_connections": [
+        3
+      ],
+      "t_connections": [
         3
       ],
       "source": "160",

@@ -4,9 +4,9 @@ Set DefaultBaseFrequency=60
 ! IEEE 4-bus test case   D-Y Stepdown Balanced
 ! Based on script developed by Alan Dunn and Steve Sparling
 
-new circuit.4busDYBal   basekV=12.47 phases=3 
+new circuit.4busDYBal    
 ! **** HAVE TO STIFFEN THE SOURCE UP A LITTLE; THE TEST CASE ASSUMES AN INFINITE BUS
-~ mvasc3=200000 200000
+~ basekV=12.47 pu=1.02 mvasc3=200000 200000
 
 set earthmodel=carson
 
@@ -44,6 +44,7 @@ new load.load1c phases=1 bus1=n4.3 conn=wye kV=2.4 kVA=1100 pf=0.95 model=1 vmin
 set voltagebases=[12.47, 4.16] 
 calcvoltagebases     ! **** let DSS compute voltage bases
 solve
+Buscoords BusCoords.dat   ! load in bus coordinates
 
 ! Various reports ...
 ! Show Voltage  LL Nodes
